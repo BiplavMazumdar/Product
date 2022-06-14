@@ -1,1 +1,67 @@
 Functions / Methods in Java
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!"); 
+        
+        sum();
+    }
+    
+    static void sum(){
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Input first Number");
+        int n = scn.nextInt();
+        
+        System.out.print("Input Second Number");
+        int m = scn.nextInt();
+        
+        System.out.println(m+n);
+        
+    }
+}
+
+return Type In java 
+
+like void, yae fir return key word use karna haa toa return 
+
+import java.util.*;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+       int sum = display();
+       System.out.println(sum);
+    }
+    
+    static int display(){
+        return 23;
+    }
+}
+
+return ka matlab abhi method done 
+
+//pass the value of number when we calling the method on the main 
+
+passing parameters 
+
+import java.util.*;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+       int sum = display(12,23);
+       System.out.println(sum);
+    }
+    
+    static int display(int a,int b){
+        return a + b;
+    }
+}
+
+
+
+
