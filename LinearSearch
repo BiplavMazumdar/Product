@@ -1,0 +1,23 @@
+LinearSearch
+
+A simple approach is to do a linear search, i.e  
+
+Start from the leftmost element of arr[] and one by one compare x with each element of arr[]
+If x matches with an element, return the index.
+If x doesn’t match with any of elements, return -1.
+
+int arr[] = {1,2,3,44,5};
+        int count = 0;
+        for(int i = 0;i<arr.length;i++){
+            if(arr[i]==23){
+                count++;
+                break;
+            }
+        }
+        if(count>0){
+            System.out.println("3 is there");
+        }else{
+            System.out.println("3 is not there");
+        }
+        
+        
