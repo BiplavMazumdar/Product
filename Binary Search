@@ -1,0 +1,24 @@
+Binary Search
+
+int a[] = {12,23,4,2,34,122};
+target = 34;
+
+Binary search say take the midle number of the array
+
+There are some steps which we have to follow 
+
+setp 1 :- Find the midel element 
+
+setp 2:- target > mid => search in the right else serch in the left 
+
+setp 3:- If middle element == target 
+
+This is my ans 
+
+for middle  =  (1st ind + lst ind)/2
+
+The total number of comparisons, therefore, is (n - 1) + (n - 2)...(2) + (1) = n(n - 1)/2 or O(n2)
+
+If start > element this means element is not present 
+
+
