@@ -1,0 +1,119 @@
+Binery Search Question
+
+when to use Binery search 
+1)when you have given sorted array
+2)square root wala mae bhi 
+
+Q1 :- Find the Celing of the number 
+
+Ceil maeans to convert [3.2 to 4] round off
+
+
+we have to check which number is nearest bigest number to the target 
+
+here we Know that Star mid End 
+
+then they will cross each other 
+
+End mid Start 
+
+so this is condition where loop will break 
+next big number will be start 
+
+while(start <= end) This Condition 
+
+so on return insist of retrun -1 we have to use return start;
+
+Question is same but this time we have to find floor the we can use the return end;
+
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class HelloWorld {
+    public static void main(String[] args) {
+        //celing of the given number
+        
+        int arr[] = {2,3,5,9,14,16,18};
+        int target = 15;
+        
+        int res = ceil(arr,target);
+        
+        System.out.println(res);
+    }
+    
+    //here 
+  //  start = 14 mid = 15  end = 16
+    
+  //  but after breaking the while loop 
+  // start  = 16 mid = 15 end = 14
+  
+    static int ceil(int arr[],int target){
+        int start = 0;
+        int end = arr.length-1;
+                    int data = 0;
+
+        while(start <= end){
+            int mid = (start+end)/2;
+   
+            if(target > arr[mid]){
+                start = mid + 1;
+            }else{
+                end = mid - 1;
+            }
+        }return start;
+    }
+}
+
+Q2 If the Target Number is Greater than the gretest Number in the Array 
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class HelloWorld {
+    public static void main(String[] args) {
+        //celing of the given number
+        
+        int arr[] = {2,3,5,9,14,16,18};
+        int target = 45;
+        
+        int res = ceil(arr,target);
+        
+        System.out.println(res);
+    }
+    
+    static int ceil(int arr[],int target){
+        int start = 0;
+        int end = arr.length-1;
+                    int data = 0;
+
+        while(start <= end){
+            int mid = (start+end)/2;
+            
+            if(target>arr[arr.length-1]){
+                return -1;
+            }
+   
+   
+            if(target > arr[mid]){
+                start = mid + 1;
+            }else{
+                end = mid - 1;
+            }
+        }return start;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
