@@ -3,6 +3,10 @@ Binary Search
 int a[] = {12,23,4,2,34,122};
 target = 34;
 
+Binary search is the most efficient searching algorithm having a run-time complexity of O(log2 N) in a sorted array.
+
+
+
 Binary search say take the midle number of the array
 
 There are some steps which we have to follow 
