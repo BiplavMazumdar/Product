@@ -135,7 +135,15 @@ class Solution {
 
 
 
-Q4:- Find First and Last Position of Element in Sorted Array
+Q4:- Find First and Last Position of Element in Sorted Array  //Facebook
+
+let take one array [1,2,3,3,3,3,3,34,45,78,98];
+taget is 3;
+
+but the condition is we have to find taget ka first occurance and last occurance so we have to continues loop chalana pada ga until first wala mil nahi jata 
+
+https://www.youtube.com/watch?v=Y7LiLNdayF0
+
 
 
 
