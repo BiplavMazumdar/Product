@@ -145,5 +145,66 @@ but the condition is we have to find taget ka first occurance and last occurance
 https://www.youtube.com/watch?v=Y7LiLNdayF0
 
 
+Q5:- Find position of an element in a sorted array of infinite numbers. Amazon
 
+// https://www.geeksforgeeks.org/find-position-element-sorted-array-infinite-numbers/
+
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+Approch :- we Know the start but we don't know the end so we will go with the chunk and every time double it and chek if target > arr[end]  
+
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        int arr[] = {3, 5, 7, 9, 10, 90,
+                100, 130, 140, 160, 170};
+                
+        int target = 10;
+        
+        int res = ans(arr,target);
+        
+        System.out.println(res);
+       
+    }
+    
+    static int ans(int arr[],int target){
+        
+        int start = 0;
+        int end = 1;
+        
+        while(target > arr[end]){
+            int temp = end + 1;
+            end = end+(end-start)*2;
+            
+            start = temp;
+        }return binery(arr,target,start,end);
+        
+    }
+    
+    
+    static int binery(int arr[],int target,int start,int end){
+        while(start<=end){
+            
+            int mid = (start+end)/2;
+            
+            if(target > arr[mid]){
+                start = mid + 1;
+            }else if(target < arr[mid]){
+                end = mid - 1;
+            }else{
+                return mid;
+            }
+        }return -1;
+    }
+    
+    
+    
+}
+
+Q6 :- Peak Index in a Mountain Array or also Know as bitonic array
+
+In this we have to find the larget number or Mountain peak  
 
