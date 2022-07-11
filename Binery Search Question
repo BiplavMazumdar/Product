@@ -208,3 +208,70 @@ Q6 :- Peak Index in a Mountain Array or also Know as bitonic array
 
 In this we have to find the larget number or Mountain peak  
 
+ // https://leetcode.com/problems/peak-index-in-a-mountain-array/
+    // https://leetcode.com/problems/find-peak-element/
+
+first number in a asending order then in desending order we have to find the peak value 
+
+int arr[] = {10,20,30,40,50,7,6,5,4,3,2,1};
+
+peak is 50
+
+sol:- 
+
+we have to check with two condition 
+
+1) if end[mid] > end[mid + 1]  it show that we are in the decending part or decending order or decending part of array
+
+2) if end[mid] < end[mid+1] it show that we are in the assending part or assending order or assending part of array
+
+3) When will loop break ?
+In the end both start and end in the largest number only , start and end = largest number breaking point 
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!"); 
+        
+        int arr[] = {10,20,30,40,50,60,7,6,5,4,3,2,1};
+        
+        System.out.println(search(arr));
+    }
+    
+    static int search(int arr[]){
+        int start = 0;
+        int end = arr.length-1;
+        
+        while(start <  end){
+            int mid = (start+end)/2;
+            
+            //condition 1
+            
+            if(arr[mid] > arr[mid+1]){
+                //we are in the decending order
+                end = mid;
+            }else{
+                //we are in the assending order
+                start = mid + 1; 
+                //because we know mid+1 is great than mid
+            }
+             // in the end, start == end and pointing to the largest number because of the 2 checks above
+        // start and end are always trying to find max element in the above 2 checks
+        // hence, when they are pointing to just one element, that is the max one because that is what the checks say
+        // more elaboration: at every point of time for start and end, they have the best possible answer till that time
+        // and if we are saying that only one item is remaining, hence cuz of above line that is the best possible ans
+            
+        }return start;  // or return end as both are 
+    }
+}
+
+Q7 Search In Mountain Arrays
+
+
+
+
+
+
+
