@@ -269,6 +269,13 @@ class HelloWorld {
 
 Q7 Search In Mountain Arrays
 
+[1,2,3,4,5,3,1]
+
+Sol :- 
+step1 : Find Peak Element 
+Step 2 : Binary Search in assending array
+step 3 : If not found binary search in decending array
+
 
 
 
