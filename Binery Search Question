@@ -268,6 +268,7 @@ class HelloWorld {
 }
 
 Q7 Search In Mountain Arrays
+    // https://leetcode.com/problems/find-in-mountain-array/
 
 [1,2,3,4,5,3,1]
 
@@ -275,6 +276,18 @@ Sol :-
 step1 : Find Peak Element 
 Step 2 : Binary Search in assending array
 step 3 : If not found binary search in decending array
+
+------
+
+** Program for array rotation
+Write a function rotate(arr[], d, n) that rotates arr[] of size n by d elements. 
+
+
+
+
+Q8 Search in Rotated Sorted Array   | Amazon,Facebook
+
+
 
 
 
