@@ -290,9 +290,27 @@ Q8 Search in Rotated Sorted Array   | Amazon,Facebook
 sol:- 
 
 int arr = [1,2,3,4,5,6,7];
-rotate by 1 should be 
+rotate by 1 should be it will be clockwise 
+it will become [7,1,2,3,4,5,6];
 
-[2,3,4,5,6,7,1];
+
+[3,4,5,6,7,0,1,2]
+
+3 to 6 is assending order and 0 to 2 is assending order 
+
+step 1 :- Find the pivot in the array  [find the peak element] 
+search in first half upto peak if you not find than search in send half (peak + 1) till end
+
+only 7,0 is desending 
+case1:- so when we find arr[mid] > arr[mid+1] that is peak element
+
+case2:- if mid element < (mid-1) element than it is a ans   
+
+case3:- if start element > end element
+
+case 4:- In this case all the element from 0 to 2 < start or start element < mid element
+
+
 
 
 
