@@ -284,6 +284,53 @@ Write a function rotate(arr[], d, n) that rotates arr[] of size n by d elements.
 
 
 
+## Rotate a Array
+
+arr[] = {1,2,3,4,5};
+
+rotate by 1
+
+arr = {5,1,2,3,4}
+
+rotate by 2
+
+arr = {4,5,1,2,3}
+
+        a%10 == reminder;
+        
+ if k is negative than 
+ 
+ k = k+arr.length
+ 
+ if k is +ive 
+ 
+ k = k%arr.length;
+ 
+ if k is -ive 
+ 
+ k = k+arr.length
+ 
+ steps :- 
+ 
+ let say we have rotate by 3
+ 
+ arr[] = {1,2,3,4,5,6,7,8};
+ 
+ step 1 :- 1,2,3,4,5 | 6,7,8
+ 
+ rotate all seprataley
+ 
+ 5,4,3,2,1 | 8,7,6
+ 
+ step 2 :- 
+ 
+ rotate the full array
+ 
+ 6,7,8,1,2,3,4,5
+ This is the ans 
+ 
+
+
 
 Q8 Search in Rotated Sorted Array   | Amazon,Facebook
 
