@@ -19,6 +19,14 @@ class HelloWorld {
 }
 
 ** BUbble Sort
+
+Bubble Sort: It’s one of the simplest algorithms which repeatedly iterates through the list, compares the elements next to each other, 
+and swaps according to the condition passed to them. Confusing isn’t it? It would be right to say this Sorting as an idea or approach to
+solving a problem what we people usually do (Brute force Solution).
+
+largest element ko push to back and arrange 
+
+
 time complexity = O(n^2)
 
 
@@ -42,10 +50,61 @@ time complexity = O(n^2)
     
     
 ** Selection Sort
+In selection sort algorithm, we search for the lowest element and arrange it to the proper location. We swap the current element with the next lowest number.
+time complexity = O(n^2)
+
 
 1 iteration for 1 swap
 
+int arr[] = {12,23,34,54,65,778,3};
+        
+        for(int i = 0;i<arr.length-1;i++){
+            int smallest = i;
+            for(int j = i+1;j<arr.length;j++){
+                if(arr[smallest] > arr[j]){
+                    smallest = j;
+                }
+            }
+            
+            int temp = arr[smallest];
+            arr[smallest] = arr[i];
+            arr[i] = temp;
+            
+        }
+        
+        System.out.println(Arrays.toString(arr));
 
+
+** Insertion Sort
+
+it will take one element and try to arrange in the sorted part so sorted part start arrange and unsorted start decresing
+
+int arr[] = {7,8,3,1,2}
+
+let say 7 (sorted)| 8 3 1 2 (unsorted)
+
+now it will take 8 and try to arrange it 
+
+7 8 | 3 1 2
+
+
+int arr[] = {12,3,34,56,67};
+        
+        for(int i = 0;i<arr.length;i++){
+            int current = arr[i];
+            int j = i-1;
+            while(j>=0 && current < arr[j]){
+                arr[j+1] = arr[j];
+                j--;
+            }
+            
+            //placement
+            
+            arr[j+1] = current;
+            
+        }
+        
+        System.out.println(Arrays.toString(arr));
     
     
     
