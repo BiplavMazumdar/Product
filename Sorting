@@ -106,6 +106,18 @@ int arr[] = {12,3,34,56,67};
         
         System.out.println(Arrays.toString(arr));
     
+    /////////
+    $$ Important __Merge Sort
+    
+    Divide and Conquer
+    
+    int arr[] = {6,3,9,5,2,8}
+    
+    first divide 
+    
+                      6,3,9           |          5,2,8
+                  6,3 | 9                      5,2 | 8
+    
     
     
     
