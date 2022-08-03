@@ -121,6 +121,36 @@ int arr[] = {12,3,34,56,67};
     
     
     
+    ##4 Quick Sort
     
+    pivot and partition 
+    
+    pivot around surround items rotate hota haa
+    or we can say that central point 
+    
+    int arr[] = {6,3,9,5,2,8}
+    
+    we can choose our pivot in 4 ways
+    
+    1 => random take any number in array
+    2 => median calculate 
+    3 => first element of array
+    4 => last element array
+    
+    here we will use last element sa pivot start karna  (4)
+    
+              6,3,9,5,2,8
+              
+              pivot last element = 8
+              
+              6,3,5,2             9
+    here 2 is pivot last element 
+    
+              empty      6,3,5
+              
+              3  |  6
+  
+  so we can do like this 
+  
     
     
