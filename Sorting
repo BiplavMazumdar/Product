@@ -152,5 +152,62 @@ int arr[] = {12,3,34,56,67};
   
   so we can do like this 
   
+  
+  // Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class HelloWorld {
+    
+    public static int partition(int arr[],int low,int high){
+        int pivot = arr[high];
+        int i = low - 1;
+        
+        for(int j = 0;j<high;j++){
+            if(arr[j]<pivot){
+                i++;
+                //swap
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+        
+        i++;
+        int temp = arr[i];
+        arr[i] = pivot;
+        arr[high] = temp;
+        return i;
+        
+        
+            
+    }
+    
+    public static void quicksort(int arr[],int low,int high){
+        if(low < high){
+            int pidx = partition(arr,low,high);
+            
+            quicksort(arr,low,pidx-1);
+            quicksort(arr,high,pidx+1);
+        }
+        
+    }
+    
+    
+    
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+        int arr[] = {6,3,9,5,2,8};
+        int n = arr.length;   
+        int y[] = new int[arr.length];
+        
+        quicksort(arr,0,n-1);
+        
+        for(int i = 0;i<n;i++){
+            y[i] = arr[i];
+        }
+            System.out.println(Arrays.toString(y));
+    }
+    
+}
     
     
