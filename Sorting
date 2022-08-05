@@ -209,5 +209,16 @@ class HelloWorld {
     }
     
 }
+
+Steps of Quick Sort 
+
+step 1 :- Allways check low < high
+
+under the quicksort method always calculate the pivot ka index first 
+
+int pivdx = partision(arr,low,high)  // partision help to sort the array small elements ko phela and large lement ko bademae
+
+    
+
     
     
