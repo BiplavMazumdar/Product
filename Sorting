@@ -163,25 +163,26 @@ int arr[] = {12,3,34,56,67};
 import java.util.*;
 class HelloWorld {
     
-    public static int partition(int arr[],int low,int high){
+    public static int partition(int arr[],int low,int high){   //in partation there is a function or it will arrange and send it back 
         int pivot = arr[high];
-        int i = low - 1;
+        int i = low - 1;   // the purpose of i is find the how many element come under array;   [low-1] this means there is no smallest element than pivot  (space = 0)
+        
         
         for(int j = 0;j<high;j++){
-            if(arr[j]<pivot){               //pivot 
-                i++;
+            if(arr[j]<pivot){               // check if element is less than pivot than we will take it in array
+                i++;                    //i++ space ka lia 
                 //swap
                 int temp = arr[i];
-                arr[i] = arr[j];
+                arr[i] = arr[j];       //here we store all the smallest element than pivot
                 arr[j] = temp;
             }
         }
         
-        i++;
+        i++;                     //again pivot ko sahi jagaha 
         int temp = arr[i];
         arr[i] = pivot;
         arr[high] = temp;
-        return i;
+        return i; // pivot index
         
         
             
@@ -189,10 +190,10 @@ class HelloWorld {
     
     public static void quicksort(int arr[],int low,int high){
         if(low < high){
-            int pidx = partition(arr,low,high);
+            int pidx = partition(arr,low,high);  here with the help of partition function we will get the pivot ka right index 
             
-            quicksort(arr,low,pidx-1);
-            quicksort(arr,high,pidx+1);
+            quicksort(arr,low,pidx-1);   //low sa lakea pidx-1 take after this every thing is unsorted 
+            quicksort(arr,high,pidx+1);  //remaning ko arrange karna ka lia 
         }
         
     }
