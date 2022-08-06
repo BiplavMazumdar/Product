@@ -155,6 +155,11 @@ int arr[] = {12,3,34,56,67};
   
   // Online Java Compiler
 // Use this editor to write, compile and run your Java code online
+// The algorithm picks a pivot element and rearranges the array elements so that all elements smaller 
+// than the picked pivot element move to the left side of the pivot, and all greater elements move to the right side.
+
+
+
 import java.util.*;
 class HelloWorld {
     
@@ -163,7 +168,7 @@ class HelloWorld {
         int i = low - 1;
         
         for(int j = 0;j<high;j++){
-            if(arr[j]<pivot){
+            if(arr[j]<pivot){               //pivot 
                 i++;
                 //swap
                 int temp = arr[i];
@@ -218,7 +223,30 @@ under the quicksort method always calculate the pivot ka index first
 
 int pivdx = partision(arr,low,high)  // partision help to sort the array small elements ko phela and large lement ko bademae
 
-    
+
+Important Sorting Algorithum(Mergesort and quicksort)
+
+Merge Sort, QuickSort is a Divide and Conquer algorithm. 
+
+Divide and Conquer Algorithm 
+This can be divided into the following three parts:
+
+1.Divide: This involves dividing the problem into smaller sub-problems.
+2.Conquer: Solve sub-problems by calling recursively until solved.
+3.Combine: Combine the sub-problems to get the final solution of the whole problem.
+
+The following are some standard algorithms that follow Divide and Conquer algorithum.
+
+1.Quicksort 
+2.Merge Sort
+3.Closest Pair of Points 
+4.Strassen’s Algorithm 
+5.Cooley–Tukey Fast Fourier Transform (FFT) algorithm
+6.Karatsuba algorithm for fast multiplication
+
+
+
+
 
     
     
