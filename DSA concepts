@@ -1,0 +1,41 @@
+# Reverse a number
+
+ int no = 123456;
+        int rev = 0;
+        
+        
+        while(no!=0){
+            int rem = no%10;
+            rev = rev*10+rem;
+            no = no/10;
+        }
+        System.out.println(rev);
+        
+   
+# Rotate a number 
+
+int no = 562984;
+ int given = 2;
+ 
+ int num = no;
+ int rev = 0;
+ int count = 100;
+ for(int i = 0;i<given;i++){
+     int rem = num%10;
+     rev = rev*10+rem;
+     count = count*10;
+     num = num/10;
+ }
+ 
+ int revs = 0;
+ while(rev!=0){
+     int rems = rev%10;
+     revs = revs*10+rems;
+     rev = rev/10;
+ }
+ 
+ int start = revs*count;
+
+System.out.println(start+num);
+
+
